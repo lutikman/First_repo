@@ -2,13 +2,13 @@
 my_list = list()
 
 # Списки можуть містити різні типи даних:
-my_list = [1, "Hello", 3.14]
+my_list = [1, "Hello", 3.14, "Hello"]
 print(f"Create list: {my_list}")
 
 # append() - метод, додавання нового елемента в кінець списку
-my_list.append(4)
-my_list.append("Hello")
-print(f"After append: {my_list}")
+# my_list.append(4)
+# my_list.append("Hello")
+# print(f"After append: {my_list}")
 
 # remove() - метод, видалити елемент списку
 my_list.remove("Hello")
