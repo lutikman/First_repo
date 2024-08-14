@@ -52,3 +52,34 @@ print('Hello, {name}. You are {age} years old.'.format(name='Jane', age=30))
 
 # Використання індексів для вказівки порядку аргументів
 print('Hello, {1}. You are {0} years old.'.format(age, name))
+
+side_one, side_two, side_three = 5, 7, 10
+print(side_one, side_two, side_three, sep=',', end='\t')
+
+side_one, side_two, side_three = 3, 4, 1
+print(side_one, side_two, side_three, sep='\t:\t')
+
+name = 'Alice'
+age = 30
+message = 'Test 3, My name is %s. I am %d years old' % (name, age)
+print(message)
+
+print("\N{slightly smiling face}") # Використання escape sequence \N{} з назвою символу
+print("\u263A")  # Смайлик у шістнадцятковому форматі
+print("\U0001F600")  # Смайлик у шістнадцятковому форматі з великою літерою "U"
+
+# Ітерпретатор розуміє значення \n і розуміє, що строку потрібно перенести в наступний рядок
+# У випадках подвійного слешу "\\" в стандартону випадку слеші заміняються на одинарні
+string = 'Hi\nHello'
+print(string)
+
+path = "C:\\Users\\Username\\Documents"
+print(path) # C:\Users\Username\Documents
+
+# Ітерпретатор зчитує "r" перед строкою і розуміє, що слеші потрібно ігнорувати
+# Тобто для строки відкидається стандартне форматування і залишається її вхідне відображення
+raw_string = r'Hi\nHello'
+print(raw_string) #Hi\nHello
+
+raw_path = r"C:\\Users\\Username\\Documents"
+print(raw_path) # C:\\Users\\Username\\Documents
